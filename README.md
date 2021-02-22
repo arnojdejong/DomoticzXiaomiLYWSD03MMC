@@ -20,4 +20,5 @@ Default state if OFF, switch to ON to start scanning
 
 ### automatic creation or manual creation of sensors.
 this plugin keeps track of the created sensors by writing to a shelve database.<br/>
-check if domoticz had control to create and modify this database in the domoticz directory
+check if domoticz had control to create and modify this database in the domoticz directory<br/>
+if manual mode is selected enter the macs of the sensors in the field (Mode2), eg: "aa:bb:cc:dd:ee:ff", "aa:bb:cc:dd:ee:00"
