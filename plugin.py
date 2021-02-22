@@ -1,5 +1,5 @@
 """
-<plugin key="Xiaomi_LYWSD03MMC" name="Xiaomi LYWSD03MMC" author="arnodejong" version="1.0.0" >
+<plugin key="Xiaomi_LYWSD03MMC" name="Xiaomi LYWSD03MMC" author="arnojdejong" version="1.0.0" >
     <description>
         <h2>Xiaomi LYWSD03MMC</h2><br/>
         Plugin to handle the bluetooth advertisement data of the Xiaomi LYWSD03MMC<br/>
