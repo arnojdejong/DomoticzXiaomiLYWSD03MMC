@@ -2,7 +2,8 @@
 <plugin key="Xiaomi_LYWSD03MMC" name="Xiaomi LYWSD03MMC" author="arnodejong" version="1.0.0" >
     <description>
         <h2>Xiaomi LYWSD03MMC</h2><br/>
-        Starts a Queue on a thread to write log messages and shuts down properly<br/>
+        Plugin to handle the bluetooth advertisement data of the Xiaomi LYWSD03MMC<br/>
+        sensor needs custom firmware from https://github.com/atc1441/ATC_MiThermometer<br/>
     </description>
     <params>
         <param field="Mode1" label="Device selection" width="300px" required="true">
@@ -11,16 +12,11 @@
                 <option label="Manual selection (add below)" value="manual"/>
             </options>
         </param>
-        <param field="Mode2" label="Devices mac adresses, capitalised and comma separated" width="300px" required="false" default=""/>
+        <param field="Mode2" label="Devices mac adresses, "aa:bb:cc:dd:ee:ff" and comma separated" width="300px" required="false" default=""/>
 
         <param field="Mode6" label="Debug" width="150px">
             <options>
                 <option label="None" value="0"  default="true" />
-                <option label="Python Only" value="2"/>
-                <option label="Basic Debugging" value="62"/>
-                <option label="Basic+Messages" value="126"/>
-                <option label="Connections Only" value="16"/>
-                <option label="Connections+Queue" value="144"/>
                 <option label="All" value="-1"/>
             </options>
         </param>
