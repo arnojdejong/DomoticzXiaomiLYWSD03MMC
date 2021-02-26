@@ -12,7 +12,7 @@
                 <option label="Manual selection (add below)" value="manual"/>
             </options>
         </param>
-        <param field="Mode2" label="Devices mac adresses, "aa:bb:cc:dd:ee:ff" and comma separated" width="300px" required="false" default=""/>
+        <param field="Mode2" label="Devices mac adresses, \"aa:bb:cc:dd:ee:ff\" and comma separated" width="300px" required="false" default=""/>
 
         <param field="Mode6" label="Debug" width="150px">
             <options>
