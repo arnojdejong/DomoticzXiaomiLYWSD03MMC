@@ -127,13 +127,16 @@ class BasePlugin:
             Domoticz.Error("simple_callback: " + str(err))
 
     async def run(self):
-        scanner = BleakScanner()
-        scanner.register_detection_callback(self.simple_callback)
+        try:
+			scanner = BleakScanner()
+			scanner.register_detection_callback(self.simple_callback)
 
-        # await scanner.discover()
-        await scanner.start()
-        await asyncio.sleep(5.0)
-        await scanner.stop()
+			# await scanner.discover()
+			await scanner.start()
+			await asyncio.sleep(5.0)
+			await scanner.stop()
+        except Exception as err:
+            Domoticz.Error("run: " + str(err))
 
     def handle_ble(self):
         try:
