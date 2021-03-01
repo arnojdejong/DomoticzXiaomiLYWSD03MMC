@@ -128,13 +128,13 @@ class BasePlugin:
 
     async def run(self):
         try:
-			scanner = BleakScanner()
-			scanner.register_detection_callback(self.simple_callback)
+			# scanner = BleakScanner()
+			# scanner.register_detection_callback(self.simple_callback)
 
 			# await scanner.discover()
-			await scanner.start()
+			await self.scanner.start()
 			await asyncio.sleep(5.0)
-			await scanner.stop()
+			await self.scanner.stop()
         except Exception as err:
             Domoticz.Error("run: " + str(err))
 
