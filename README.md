@@ -4,7 +4,7 @@ Plugin for Domoticz to auto create Temperature and Humidity sensors
 
 ## preperation
 
-###Python: Failed dynamic library load, install the latest libpython3.x library that is available for your platform.
+### Python: Failed dynamic library load, install the latest libpython3.x library that is available for your platform.
 ```
 sudo apt-get install python3.7 libpython3.7 python3.7-dev python3-pip -y
 
