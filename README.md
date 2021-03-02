@@ -14,13 +14,20 @@ sudo systemctl restart domoticz.service
 ### git clone
 
 clone plugin to domoticz/plugins - folder
-git clone 
+```
+cd domoticz/plugins
+git clone https://github.com/arnojdejong/DomoticzXiaomiLYWSD03MMC.git
 ```
 
 ### install python plugins
+```
+cd DomoticzXiaomiLYWSD03MMC
 pip install -r requirements.txt
+```
 
 restart domoticz
+```
+sudo systemctl restart domoticz.service
 ```
 ### hardware
 create new hardware with type Xiaomi LYWSD03MMC
