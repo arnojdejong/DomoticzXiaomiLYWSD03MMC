@@ -11,10 +11,13 @@ sudo apt-get install python3.7 libpython3.7 python3.7-dev python3-pip -y
 sudo systemctl restart domoticz.service
 ```
 
-```
-copy plugin folder to domoticz/plugins - folder
+### git clone
 
-install python plugins
+clone plugin to domoticz/plugins - folder
+git clone 
+```
+
+### install python plugins
 pip install -r requirements.txt
 
 restart domoticz
