@@ -22,7 +22,7 @@ git clone https://github.com/arnojdejong/DomoticzXiaomiLYWSD03MMC.git
 ### install python plugins
 ```
 cd DomoticzXiaomiLYWSD03MMC
-pip install -r requirements.txt
+sudo pip3 install -r requirements.txt
 ```
 
 restart domoticz
