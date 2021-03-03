@@ -6,6 +6,7 @@ Plugin for Domoticz to auto create Temperature and Humidity sensors
 
 Check you do actually have a version of Python3, it will tell you if it is installed already:
 ```
+sudo apt-get update
 sudo apt install python3
 ```
 Check the version:
@@ -31,6 +32,11 @@ sudo systemctl restart domoticz.service
 ```
 
 ### git clone
+install Git to easily download the plugins through the terminal:
+```
+sudo apt-get update
+sudo apt-get install git
+```
 
 clone plugin to domoticz/plugins - folder
 ```
