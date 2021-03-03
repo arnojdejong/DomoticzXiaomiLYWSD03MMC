@@ -51,6 +51,11 @@ sudo pip3 install -r requirements.txt
 
 sudo systemctl restart domoticz.service
 ```
+
+### extra info
+https://www.domoticz.com/wiki/Using_Python_plugins
+
+## Domoticz
 ### new hardware
 create new hardware in domoticz with type: Xiaomi LYWSD03MMC
 
