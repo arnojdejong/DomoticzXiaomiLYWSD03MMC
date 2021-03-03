@@ -25,6 +25,10 @@ Some users believe that Domoticz Beta versions since V3.6129 require Python3-dev
 ```
 sudo apt install python3-dev
 ```
+Install pip
+```
+sudo apt-get install python3-pip
+```
 
 Restart Domoticz.
 ```
