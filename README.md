@@ -53,6 +53,11 @@ sudo systemctl restart domoticz.service
 ```
 
 ### extra info
+install domoticz
+```
+curl -L https://install.domoticz.com | sudo bash
+```
+
 https://www.domoticz.com/wiki/Using_Python_plugins
 
 ## Domoticz
