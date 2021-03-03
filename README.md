@@ -61,7 +61,13 @@ install domoticz
 ```
 curl -L https://install.domoticz.com | sudo bash
 ```
+org.freedesktop.DBus.Error.TimedOut: Failed to activate service 'org.bluez': timed out
+reboot needed
+```
+sudo reboot
+```
 
+domoticz link, python3
 https://www.domoticz.com/wiki/Using_Python_plugins
 
 ## Domoticz
