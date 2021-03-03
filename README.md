@@ -2,12 +2,31 @@
 Plugin for Domoticz to auto create Temperature and Humidity sensors
 
 
-## preperation
+## installation
 
-### Python: Failed dynamic library load, install the latest libpython3.x library that is available for your platform.
+Check you do actually have a version of Python3, it will tell you if it is installed already:
 ```
-sudo apt-get install python3.7 libpython3.7 python3.7-dev python3-pip -y
+sudo apt install python3
+```
+Check the version:
+```
+python3 -V
+```
+Make sure that you have libpython installed, it needs to match the version you have. If you have Python 3.4.x then you make sure you have libpython3.4, if you have Python 3.5.x then you make sure you have libpython3.5 and so on. Use this command to check:
+```
+dpkg --get-selections | grep libpython
+```
+If it is not there then use (where 'x' is the version from above: e,g libpython3.4 or libpython3.5 etc):
+```
+sudo apt install libpython3.x
+```
+Some users believe that Domoticz Beta versions since V3.6129 require Python3-dev. Unconfirmed, only install if you are having issues:
+```
+sudo apt install python3-dev
+```
 
+Restart Domoticz.
+```
 sudo systemctl restart domoticz.service
 ```
 
