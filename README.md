@@ -67,7 +67,7 @@ reboot needed
 sudo reboot
 ```
 
-domoticz link, python3
+domoticz link, python3<br/>
 https://www.domoticz.com/wiki/Using_Python_plugins
 
 ## Domoticz
