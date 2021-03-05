@@ -35,20 +35,20 @@ Restart Domoticz.
 sudo systemctl restart domoticz.service
 ```
 
-### git clone
-install Git to easily download the plugins through the terminal:
+### Git clone
+Install Git to easily download the plugins through the terminal:
 ```
 sudo apt-get update
 sudo apt-get install git
 ```
 
-clone plugin to domoticz/plugins - folder
+Clone plugin to domoticz/plugins - folder
 ```
 cd domoticz/plugins
 git clone https://github.com/arnojdejong/DomoticzXiaomiLYWSD03MMC.git
 ```
 
-### install python plugins
+### Install python plugins
 ```
 cd DomoticzXiaomiLYWSD03MMC
 sudo pip3 install -r requirements.txt
@@ -57,33 +57,33 @@ sudo systemctl restart domoticz.service
 ```
 
 ### extra info
-install domoticz
+Install domoticz
 ```
 curl -L https://install.domoticz.com | sudo bash
 ```
 org.freedesktop.DBus.Error.TimedOut: Failed to activate service 'org.bluez': timed out<br/>
-reboot needed
+Reboot needed
 ```
 sudo reboot
 ```
 
-domoticz link, python3<br/>
+Domoticz link, python3<br/>
 https://www.domoticz.com/wiki/Using_Python_plugins
 
 ## Domoticz
 ### new hardware
-create new hardware in domoticz with type: Xiaomi LYWSD03MMC<br/>
+Create new hardware in domoticz with type: Xiaomi LYWSD03MMC<br/>
 <br/>
 This plugin creates devices, make sure "Accept new Hardware Devices" is on. (Setup -> Settings -> Hardware/Devices -> Accept new Hardware Devices)
 ### Xiaomi LYWSD03MMC switch
-after installation of the hardware, the plugin will create a "master" switch to enabled Bluetooth scanning.<br/>
+After installation of the hardware, the plugin will create a "master" switch to enabled Bluetooth scanning.<br/>
 Default state if OFF, switch to ON to start catching the bluetooth advertisements
 
 ### automatic creation or manual creation of sensors.
-this plugin keeps track of the created sensors by writing to a shelve database.<br/>
-check if domoticz has the rights to create and modify this database in the domoticz directory<br/>
-if manual mode is selected enter the macs of the sensors in the field (Mode2), eg: "aa:bb:cc:dd:ee:ff", "aa:bb:cc:dd:ee:00"
+This plugin keeps track of the created sensors by writing to a shelve database.<br/>
+Check if Domoticz has the rights to create and modify this database in the domoticz directory<br/>
+If manual mode is selected enter the macs of the sensors in the field (Mode2), eg: "aa:bb:cc:dd:ee:ff", "aa:bb:cc:dd:ee:00"
 
 ### Debug
-this plugin has a debug option if needed<br/>
+This plugin has a debug option if needed<br/>
 (Setup -> Hardware -> <hardware> -> Debug (off / all) -> Update)
