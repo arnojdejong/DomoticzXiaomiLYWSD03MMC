@@ -64,10 +64,10 @@ class BasePlugin:
 
                 # create sensor if needed
                 if values.address not in self.macs and Parameters["Mode1"] == 'auto':
-                        self.macs.append(values.address)
-                        sensor_number = self.macs.index(values.address) + 2
-                        Domoticz.Device(Name=values.address, Unit=sensor_number, TypeName="Temp+Hum", Used=1).Create()
-                        self.save_macs_to_database(self.macs)
+                    self.macs.append(values.address)
+                    sensor_number = self.macs.index(values.address) + 2
+                    Domoticz.Device(Name=values.address, Unit=sensor_number, TypeName="Temp+Hum", Used=1).Create()
+                    self.save_macs_to_database(self.macs)
 
                 # update values for known devices
                 if values.address in self.macs:
@@ -102,7 +102,7 @@ class BasePlugin:
                 service_data = advertisement_data.service_data[XIAOMI_LYWSD03MMC_PROFILE_CUSTOM]
                 values = XiaomiLYWSD03MMC()
                 values.address = ':'.join('{:02x}'.format(x) for x in service_data[0:6])
-                values.temperature = float(int.from_bytes(service_data[6:8], byteorder='big')) / 10
+                values.temperature = float(int.from_bytes(service_data[6:8], byteorder='big', signed=True)) / 10
                 values.humidity = service_data[8]
                 values.battery_level = service_data[9]
                 values.battery_voltage = int.from_bytes(service_data[10:12], byteorder='big')
